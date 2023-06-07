@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView1">
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:stretchColumns="1">
+
+                <Button
+                    android:text="already filled the survey?"
+                    android:layout_width="282.9dp"
+                    android:layout_height="wrap_content"
+                    android:background="#0070b9"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:id="@+id/surveydone" />
+
+                <TextView
+                    android:text="HEALTH DECLARATION SURVEY"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:gravity="center"
+                    android:textColor="#0070b9"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:id="@+id/textView1" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="SYMPTOMS: Have you experienced any of the following in the past 14 days?"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/textView2" />
+
+                <CheckBox
+                    android:layout_marginTop="10dp"
+                    android:text="Fever"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:id="@+id/feverCB" />
+    
+                <CheckBox
+                    android:text="Cough"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:id="@+id/coughCB" />
+
+                <CheckBox
+                    android:text="Sore Throat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:id="@+id/sorethroatCB" />
+
+                <CheckBox
+                    android:text="Shortness of Breath"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:id="@+id/shortbreathCB" />
+
+                <CheckBox
+                    android:text="Body Ache"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:id="@+id/bodyacheCB" />
+
+                <CheckBox
+                    android:text="Redness of Eyes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:id="@+id/redeyeCB" />
+
+                <CheckBox
+                    android:text="Loss of Smell or Taste"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:id="@+id/lossSTCB" />
+
+                <CheckBox
+                    android:text="Nausea, Vomiting or Diarrhoea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:id="@+id/nauseaCB" />
+
+                <CheckBox
+                    android:text="Fatigue or Weakness"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:id="@+id/fatigueCB" />
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:text="SUBMIT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#0070b9"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:id="@+id/submitCB" />
+                
+                <ImageView  
+                    android:layout_centerHorizontal="true"  
+                    android:layout_marginTop="10dp"  
+                    android:id="@+id/barcodeImage"  
+                    android:layout_below="@+id/plain_text_input"  
+                    android:layout_width="wrap_content"  
+                    android:layout_height="wrap_content"/>     
+                
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>   
+</LinearLayout>

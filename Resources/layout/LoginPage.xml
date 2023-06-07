@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="389.1dp"
+        android:layout_height="641.4dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_marginTop="0.0dp">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="155.7dp"
+            android:src="@drawable/ctaicon"
+            android:id="@+id/imageView1" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="SIGN IN"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:gravity="center"
+            android:textColor="#0070b9"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:id="@+id/textViewLOG" />
+
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/holo_red_dark"
+            android:id="@+id/error" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="E-MAIL ADDRESS: "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1LG"
+            android:textStyle="bold"
+            android:layout_marginRight="0.0dp" />
+        
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email" />
+
+        <TextView
+            android:text="PASSWORD:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/textView2LG" />
+
+        <EditText
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password" />
+
+        <Button
+            android:text="sign IN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0070b9"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:id="@+id/login" />
+
+        <Button
+            android:text="Not yet Registered?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0070b9"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:id="@+id/signup"/>
+
+    </LinearLayout>
+</RelativeLayout>
